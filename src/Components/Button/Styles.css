@@ -1,0 +1,18 @@
+.btn{ 
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 21px;
+  background:#FFF;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer; 
+}
+
+.backgrounded-button{
+background: linear-gradient(189.77deg, #7135d8 14.69%, #542acc 85.31%);
+color:#fff;
+}
