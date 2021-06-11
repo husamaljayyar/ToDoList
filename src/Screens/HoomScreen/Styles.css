@@ -20,6 +20,8 @@
     flex-direction: row;
     width: 100%;
     height: 100px;
+
+
 }
 
 .add-task-input{
@@ -33,6 +35,7 @@
 .input-span_eror{
     width:100%
 }
+
 
 .add-task-input:focus{
     border: none;
