@@ -1,6 +1,6 @@
 import "./Styles.css"
 
-const Button =(isPurble, handleClick, text)=> {
+const Button =({ isPurble, handleClick, text })=> {
 
         return ( 
             <button 
