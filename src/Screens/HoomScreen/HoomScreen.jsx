@@ -39,8 +39,6 @@ const HoomScreen = () => {
                         type="text"
                         placeholder="Enter a new Task..."
                         autoComplete="off"
-                        id="text"
-                        name="text"
                         onChange={(e) => {
                             setValue(e.target.value)
                         }}
@@ -60,8 +58,10 @@ const HoomScreen = () => {
                                     title: value,
                                     id: uuidv4()
                                 },
-                                list,
+                                ...list,
                             ]
+                            console.log(newArr)
+
                             setList(newArr)
                             setValue('')
                             setError('')
@@ -79,16 +79,13 @@ const HoomScreen = () => {
                     list.map(item => (
 
                         <ListItem
-                            text={item.title}
+                            task={item.title}
                             key={item.id}
                             handleDelete={() => {
-                                const filterItems = list.filter(
+                                const filterdItems = list.filter(
                                     (filterItem) => filterItem.id != item.id // true => return the item
                                 );
-                                setList({
-                                    value,
-                                    list: filterItems,
-                                });
+                                setList(filterdItems);
                             }}
                         />
                     ))
